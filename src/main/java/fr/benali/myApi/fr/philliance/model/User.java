@@ -13,6 +13,7 @@ public class User {
 public int getId(){
     return this.id;
 }    
+
 public String getName(){
     return this.name;
 }
@@ -26,7 +27,6 @@ public void setName(String name){
 public void setAge(int age){
     this.age=age;
 }
-public Object findById(long l) {
-    return null;
+ public void deleteUser(int id) {
 }
 }
