@@ -26,8 +26,8 @@ public class UserController {
         return user;
     } 
     @PostMapping("/user")
-    public User creatUser(@RequestBody String name,int age ){
-       User user= userService.createUser(null, 0); 
+    public User creatUser(@RequestBody UserRequest body){
+       User user= userService.createUser(body.getName(),body.getAge()); 
         return user;         
     }
      @PutMapping("/user") 
