@@ -29,4 +29,6 @@ public void setAge(int age){
 }
  public void deleteUser(int id) {
 }
+public void setId(int i) {
+}
 }

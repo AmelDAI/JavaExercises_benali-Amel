@@ -27,7 +27,8 @@ public UserService(){
         return null;
     }
     public User createUser( String name, int age){      
-         
+         user.setId(users.size() + 1);
+         this.users.add(new User(users.size() + 1, "celine", 18));
         return user;
     }
     public User updateUser(int id, String name, int age){      
