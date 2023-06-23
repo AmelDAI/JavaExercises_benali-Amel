@@ -2,6 +2,8 @@ package service.my.Api;
 
 import java.util.ArrayList;
 import org.springframework.stereotype.Service;
+
+import fr.benali.myApi.fr.philliance.contoller.my.Api.UserRequest;
 import fr.benali.myApi.fr.philliance.model.User;
 
 @Service
@@ -49,5 +51,10 @@ public UserService(){
         } 
 return null;
 }
+
+
+    public User updateUser(int id, UserRequest body) {
+        return null;
+    }
     
 }

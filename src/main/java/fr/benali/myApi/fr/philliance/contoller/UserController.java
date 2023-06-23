@@ -15,7 +15,7 @@ import service.my.Api.UserService;
 @RestController
 public class UserController {
     private UserService userService;
-
+    private UserRequest body;
     public UserController(UserService userService){
 
         this.userService = userService;
@@ -32,7 +32,7 @@ public class UserController {
     }
      @PutMapping("/user") 
     public User updateUser(@RequestParam int id,@RequestBody UserRequest body  ){
-        User user=  userService.updateUser(id, null, id);
+        User user=  userService.updateUser(id, body.getName(),body.getAge());
         return user;            
     }
     @DeleteMapping("/user") 
